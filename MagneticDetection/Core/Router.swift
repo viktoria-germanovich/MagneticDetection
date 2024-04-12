@@ -21,11 +21,6 @@ final class AppRouter: Router {
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-    
-    @objc
-    private func backButtonDidTap() {
-        navigationController?.popViewController(animated: true)
-    }
 
     func navigateToMagneticDetection(viewModel: MagneticDetectionViewModel) {
         let vc = MagneticDetectionViewController(viewModel: viewModel)
