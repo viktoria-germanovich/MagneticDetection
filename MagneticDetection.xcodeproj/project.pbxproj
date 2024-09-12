@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C82BA10F2BC6A5A0004CF6E8 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA10E2BC6A5A0004CF6E8 /* DevicesViewController.swift */; };
+		C82BA1112BC6A9B2004CF6E8 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA1102BC6A9B2004CF6E8 /* DeviceCell.swift */; };
+		C82BA1132BC6AFA4004CF6E8 /* UITableView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA1122BC6AFA4004CF6E8 /* UITableView+Utils.swift */; };
+		C82BA1152BC6B445004CF6E8 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA1142BC6B445004CF6E8 /* DeviceModel.swift */; };
+		C82BA11D2BC6B641004CF6E8 /* scan_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = C82BA11C2BC6B641004CF6E8 /* scan_animation.json */; };
+		C82BA11F2BC6B691004CF6E8 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C82BA11E2BC6B691004CF6E8 /* Roboto-Bold.ttf */; };
+		C82BA1212BC6B6A1004CF6E8 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C82BA1202BC6B6A1004CF6E8 /* Roboto-Medium.ttf */; };
+		C82BA1232BC6B6B4004CF6E8 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C82BA1222BC6B6B4004CF6E8 /* Roboto-Regular.ttf */; };
+		C82BA1262BC6DEAF004CF6E8 /* DeviceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA1252BC6DEAF004CF6E8 /* DeviceDetailsViewController.swift */; };
+		C82BA1282BC704D1004CF6E8 /* DeviceInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA1272BC704D1004CF6E8 /* DeviceInfoView.swift */; };
+		C82BA12B2BC7EEFD004CF6E8 /* devices.json in Resources */ = {isa = PBXBuildFile; fileRef = C82BA12A2BC7EEFD004CF6E8 /* devices.json */; };
+		C82BA12D2BC7F15C004CF6E8 /* ScanNetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA12C2BC7F15C004CF6E8 /* ScanNetworkViewModel.swift */; };
+		C82BA12F2BC7F911004CF6E8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA12E2BC7F911004CF6E8 /* Router.swift */; };
+		C82BA1312BC80224004CF6E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA1302BC80224004CF6E8 /* HomeViewModel.swift */; };
+		C82BA1332BC8077F004CF6E8 /* MagneticDetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA1322BC8077F004CF6E8 /* MagneticDetectionViewModel.swift */; };
+		C82BA1352BC80F87004CF6E8 /* AnimatedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA1342BC80F87004CF6E8 /* AnimatedControl.swift */; };
+		C82BA1372BC83371004CF6E8 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA1362BC83371004CF6E8 /* DevicesViewModel.swift */; };
+		C82BA1392BC83878004CF6E8 /* DeviceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA1382BC83878004CF6E8 /* DeviceDetailsViewModel.swift */; };
+		C82BA13B2BC94A25004CF6E8 /* UIDevice+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BA13A2BC94A25004CF6E8 /* UIDevice+Ext.swift */; };
+		C8C31D1D2BC03AFD008D0F9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C31D1C2BC03AFD008D0F9C /* AppDelegate.swift */; };
+		C8C31D212BC03AFD008D0F9C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C31D202BC03AFD008D0F9C /* HomeViewController.swift */; };
+		C8C31D262BC03AFE008D0F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8C31D252BC03AFE008D0F9C /* Assets.xcassets */; };
+		C8C31D322BC03E22008D0F9C /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C31D312BC03E22008D0F9C /* UIView+Ext.swift */; };
+		C8C31D352BC042FA008D0F9C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C8C31D342BC042FA008D0F9C /* SnapKit */; };
+		C8C31D392BC04863008D0F9C /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C31D382BC04863008D0F9C /* UIStackView+Ext.swift */; };
+		C8C31D3B2BC049E1008D0F9C /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C31D3A2BC049E1008D0F9C /* UILabel+Ext.swift */; };
+		C8C31D3D2BC3F79D008D0F9C /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C31D3C2BC3F79D008D0F9C /* UIFont+Ext.swift */; };
+		C8C31D442BC40091008D0F9C /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C31D432BC40091008D0F9C /* UIColor+Ext.swift */; };
+		C8C31D482BC40A9E008D0F9C /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C31D472BC40A9E008D0F9C /* PrimaryButton.swift */; };
+		C8C31D4D2BC41982008D0F9C /* HomeActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C31D4C2BC41982008D0F9C /* HomeActionView.swift */; };
+		C8C31D512BC430F1008D0F9C /* HomeActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C31D502BC430F1008D0F9C /* HomeActionButton.swift */; };
+		C8C31D532BC44164008D0F9C /* ScanNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C31D522BC44164008D0F9C /* ScanNetworkViewController.swift */; };
+		C8C31D552BC54F20008D0F9C /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C31D542BC54F20008D0F9C /* TitleView.swift */; };
+		C8C31D5B2BC5567E008D0F9C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C8C31D5A2BC5567E008D0F9C /* Lottie */; };
+		C8C31D5D2BC57007008D0F9C /* MagneticDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C31D5C2BC57007008D0F9C /* MagneticDetectionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C82BA10E2BC6A5A0004CF6E8 /* DevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
+		C82BA1102BC6A9B2004CF6E8 /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+		C82BA1122BC6AFA4004CF6E8 /* UITableView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Utils.swift"; sourceTree = "<group>"; };
+		C82BA1142BC6B445004CF6E8 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
+		C82BA11C2BC6B641004CF6E8 /* scan_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scan_animation.json; sourceTree = "<group>"; };
+		C82BA11E2BC6B691004CF6E8 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		C82BA1202BC6B6A1004CF6E8 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		C82BA1222BC6B6B4004CF6E8 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		C82BA1252BC6DEAF004CF6E8 /* DeviceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsViewController.swift; sourceTree = "<group>"; };
+		C82BA1272BC704D1004CF6E8 /* DeviceInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoView.swift; sourceTree = "<group>"; };
+		C82BA12A2BC7EEFD004CF6E8 /* devices.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = devices.json; sourceTree = "<group>"; };
+		C82BA12C2BC7F15C004CF6E8 /* ScanNetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanNetworkViewModel.swift; sourceTree = "<group>"; };
+		C82BA12E2BC7F911004CF6E8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C82BA1302BC80224004CF6E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C82BA1322BC8077F004CF6E8 /* MagneticDetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagneticDetectionViewModel.swift; sourceTree = "<group>"; };
+		C82BA1342BC80F87004CF6E8 /* AnimatedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedControl.swift; sourceTree = "<group>"; };
+		C82BA1362BC83371004CF6E8 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
+		C82BA1382BC83878004CF6E8 /* DeviceDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsViewModel.swift; sourceTree = "<group>"; };
+		C82BA13A2BC94A25004CF6E8 /* UIDevice+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ext.swift"; sourceTree = "<group>"; };
+		C8C31D192BC03AFD008D0F9C /* MagneticDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagneticDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C31D1C2BC03AFD008D0F9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C8C31D202BC03AFD008D0F9C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C8C31D252BC03AFE008D0F9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8C31D2A2BC03AFE008D0F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8C31D312BC03E22008D0F9C /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		C8C31D382BC04863008D0F9C /* UIStackView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
+		C8C31D3A2BC049E1008D0F9C /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		C8C31D3C2BC3F79D008D0F9C /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		C8C31D432BC40091008D0F9C /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		C8C31D472BC40A9E008D0F9C /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		C8C31D4C2BC41982008D0F9C /* HomeActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActionView.swift; sourceTree = "<group>"; };
+		C8C31D502BC430F1008D0F9C /* HomeActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActionButton.swift; sourceTree = "<group>"; };
+		C8C31D522BC44164008D0F9C /* ScanNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanNetworkViewController.swift; sourceTree = "<group>"; };
+		C8C31D542BC54F20008D0F9C /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		C8C31D5C2BC57007008D0F9C /* MagneticDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagneticDetectionViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8C31D162BC03AFD008D0F9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8C31D352BC042FA008D0F9C /* SnapKit in Frameworks */,
+				C8C31D5B2BC5567E008D0F9C /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C82BA1162BC6B4DE004CF6E8 /* DeviceList */ = {
+			isa = PBXGroup;
+			children = (
+				C82BA10E2BC6A5A0004CF6E8 /* DevicesViewController.swift */,
+				C82BA1362BC83371004CF6E8 /* DevicesViewModel.swift */,
+				C82BA1142BC6B445004CF6E8 /* DeviceModel.swift */,
+				C82BA1102BC6A9B2004CF6E8 /* DeviceCell.swift */,
+			);
+			path = DeviceList;
+			sourceTree = "<group>";
+		};
+		C82BA1172BC6B4EC004CF6E8 /* ScanNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				C8C31D522BC44164008D0F9C /* ScanNetworkViewController.swift */,
+				C82BA12C2BC7F15C004CF6E8 /* ScanNetworkViewModel.swift */,
+			);
+			path = ScanNetwork;
+			sourceTree = "<group>";
+		};
+		C82BA1182BC6B4F6004CF6E8 /* MagneticDetection */ = {
+			isa = PBXGroup;
+			children = (
+				C8C31D5C2BC57007008D0F9C /* MagneticDetectionViewController.swift */,
+				C82BA1322BC8077F004CF6E8 /* MagneticDetectionViewModel.swift */,
+			);
+			path = MagneticDetection;
+			sourceTree = "<group>";
+		};
+		C82BA1192BC6B521004CF6E8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C82BA1242BC6DE94004CF6E8 /* DeviceDetails */,
+				C82BA13C2BC9628A004CF6E8 /* Home */,
+				C82BA1172BC6B4EC004CF6E8 /* ScanNetwork */,
+				C82BA1182BC6B4F6004CF6E8 /* MagneticDetection */,
+				C82BA1162BC6B4DE004CF6E8 /* DeviceList */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C82BA11A2BC6B589004CF6E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C82BA1292BC7EEC8004CF6E8 /* Mock */,
+				C8C31D402BC3F92F008D0F9C /* Fonts */,
+				C8C31D562BC55403008D0F9C /* Animation */,
+				C8C31D252BC03AFE008D0F9C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C82BA11B2BC6B5A1004CF6E8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C8C31D1C2BC03AFD008D0F9C /* AppDelegate.swift */,
+				C82BA12E2BC7F911004CF6E8 /* Router.swift */,
+				C8C31D2A2BC03AFE008D0F9C /* Info.plist */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C82BA1242BC6DE94004CF6E8 /* DeviceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C82BA1252BC6DEAF004CF6E8 /* DeviceDetailsViewController.swift */,
+				C82BA1382BC83878004CF6E8 /* DeviceDetailsViewModel.swift */,
+				C82BA1272BC704D1004CF6E8 /* DeviceInfoView.swift */,
+			);
+			path = DeviceDetails;
+			sourceTree = "<group>";
+		};
+		C82BA1292BC7EEC8004CF6E8 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				C82BA12A2BC7EEFD004CF6E8 /* devices.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		C82BA13C2BC9628A004CF6E8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C8C31D202BC03AFD008D0F9C /* HomeViewController.swift */,
+				C82BA1302BC80224004CF6E8 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C8C31D102BC03AFD008D0F9C = {
+			isa = PBXGroup;
+			children = (
+				C8C31D1B2BC03AFD008D0F9C /* MagneticDetection */,
+				C8C31D1A2BC03AFD008D0F9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8C31D1A2BC03AFD008D0F9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8C31D192BC03AFD008D0F9C /* MagneticDetection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8C31D1B2BC03AFD008D0F9C /* MagneticDetection */ = {
+			isa = PBXGroup;
+			children = (
+				C82BA11A2BC6B589004CF6E8 /* Resources */,
+				C82BA11B2BC6B5A1004CF6E8 /* Core */,
+				C8C31D302BC03E0B008D0F9C /* Extensions */,
+				C82BA1192BC6B521004CF6E8 /* Source */,
+				C8C31D492BC40AA3008D0F9C /* Views */,
+			);
+			path = MagneticDetection;
+			sourceTree = "<group>";
+		};
+		C8C31D302BC03E0B008D0F9C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C8C31D312BC03E22008D0F9C /* UIView+Ext.swift */,
+				C8C31D382BC04863008D0F9C /* UIStackView+Ext.swift */,
+				C8C31D3A2BC049E1008D0F9C /* UILabel+Ext.swift */,
+				C8C31D3C2BC3F79D008D0F9C /* UIFont+Ext.swift */,
+				C8C31D432BC40091008D0F9C /* UIColor+Ext.swift */,
+				C82BA13A2BC94A25004CF6E8 /* UIDevice+Ext.swift */,
+				C82BA1122BC6AFA4004CF6E8 /* UITableView+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C8C31D402BC3F92F008D0F9C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C82BA1202BC6B6A1004CF6E8 /* Roboto-Medium.ttf */,
+				C82BA11E2BC6B691004CF6E8 /* Roboto-Bold.ttf */,
+				C82BA1222BC6B6B4004CF6E8 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C8C31D492BC40AA3008D0F9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8C31D472BC40A9E008D0F9C /* PrimaryButton.swift */,
+				C8C31D4C2BC41982008D0F9C /* HomeActionView.swift */,
+				C8C31D502BC430F1008D0F9C /* HomeActionButton.swift */,
+				C82BA1342BC80F87004CF6E8 /* AnimatedControl.swift */,
+				C8C31D542BC54F20008D0F9C /* TitleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8C31D562BC55403008D0F9C /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C82BA11C2BC6B641004CF6E8 /* scan_animation.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8C31D182BC03AFD008D0F9C /* MagneticDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8C31D2D2BC03AFE008D0F9C /* Build configuration list for PBXNativeTarget "MagneticDetection" */;
+			buildPhases = (
+				C8C31D152BC03AFD008D0F9C /* Sources */,
+				C8C31D162BC03AFD008D0F9C /* Frameworks */,
+				C8C31D172BC03AFD008D0F9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagneticDetection;
+			packageProductDependencies = (
+				C8C31D342BC042FA008D0F9C /* SnapKit */,
+				C8C31D5A2BC5567E008D0F9C /* Lottie */,
+			);
+			productName = MagneticDetection;
+			productReference = C8C31D192BC03AFD008D0F9C /* MagneticDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8C31D112BC03AFD008D0F9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C8C31D182BC03AFD008D0F9C = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = C8C31D142BC03AFD008D0F9C /* Build configuration list for PBXProject "MagneticDetection" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8C31D102BC03AFD008D0F9C;
+			packageReferences = (
+				C8C31D332BC042FA008D0F9C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C8C31D592BC5567E008D0F9C /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
+			productRefGroup = C8C31D1A2BC03AFD008D0F9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8C31D182BC03AFD008D0F9C /* MagneticDetection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8C31D172BC03AFD008D0F9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82BA1232BC6B6B4004CF6E8 /* Roboto-Regular.ttf in Resources */,
+				C82BA1212BC6B6A1004CF6E8 /* Roboto-Medium.ttf in Resources */,
+				C82BA12B2BC7EEFD004CF6E8 /* devices.json in Resources */,
+				C8C31D262BC03AFE008D0F9C /* Assets.xcassets in Resources */,
+				C82BA11F2BC6B691004CF6E8 /* Roboto-Bold.ttf in Resources */,
+				C82BA11D2BC6B641004CF6E8 /* scan_animation.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8C31D152BC03AFD008D0F9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C82BA1372BC83371004CF6E8 /* DevicesViewModel.swift in Sources */,
+				C8C31D482BC40A9E008D0F9C /* PrimaryButton.swift in Sources */,
+				C8C31D3D2BC3F79D008D0F9C /* UIFont+Ext.swift in Sources */,
+				C8C31D322BC03E22008D0F9C /* UIView+Ext.swift in Sources */,
+				C8C31D552BC54F20008D0F9C /* TitleView.swift in Sources */,
+				C8C31D392BC04863008D0F9C /* UIStackView+Ext.swift in Sources */,
+				C82BA1312BC80224004CF6E8 /* HomeViewModel.swift in Sources */,
+				C82BA1132BC6AFA4004CF6E8 /* UITableView+Utils.swift in Sources */,
+				C8C31D512BC430F1008D0F9C /* HomeActionButton.swift in Sources */,
+				C8C31D212BC03AFD008D0F9C /* HomeViewController.swift in Sources */,
+				C82BA12D2BC7F15C004CF6E8 /* ScanNetworkViewModel.swift in Sources */,
+				C8C31D1D2BC03AFD008D0F9C /* AppDelegate.swift in Sources */,
+				C82BA1112BC6A9B2004CF6E8 /* DeviceCell.swift in Sources */,
+				C82BA1332BC8077F004CF6E8 /* MagneticDetectionViewModel.swift in Sources */,
+				C82BA10F2BC6A5A0004CF6E8 /* DevicesViewController.swift in Sources */,
+				C8C31D442BC40091008D0F9C /* UIColor+Ext.swift in Sources */,
+				C8C31D3B2BC049E1008D0F9C /* UILabel+Ext.swift in Sources */,
+				C8C31D4D2BC41982008D0F9C /* HomeActionView.swift in Sources */,
+				C82BA1352BC80F87004CF6E8 /* AnimatedControl.swift in Sources */,
+				C82BA13B2BC94A25004CF6E8 /* UIDevice+Ext.swift in Sources */,
+				C82BA12F2BC7F911004CF6E8 /* Router.swift in Sources */,
+				C8C31D532BC44164008D0F9C /* ScanNetworkViewController.swift in Sources */,
+				C82BA1392BC83878004CF6E8 /* DeviceDetailsViewModel.swift in Sources */,
+				C82BA1282BC704D1004CF6E8 /* DeviceInfoView.swift in Sources */,
+				C82BA1152BC6B445004CF6E8 /* DeviceModel.swift in Sources */,
+				C8C31D5D2BC57007008D0F9C /* MagneticDetectionViewController.swift in Sources */,
+				C82BA1262BC6DEAF004CF6E8 /* DeviceDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C8C31D2B2BC03AFE008D0F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8C31D2C2BC03AFE008D0F9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8C31D2E2BC03AFE008D0F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZNKN5NDVAY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagneticDetection/Core/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Magnetic Detection";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gervika.MagneticDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C8C31D2F2BC03AFE008D0F9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZNKN5NDVAY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagneticDetection/Core/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Magnetic Detection";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gervika.MagneticDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8C31D142BC03AFD008D0F9C /* Build configuration list for PBXProject "MagneticDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8C31D2B2BC03AFE008D0F9C /* Debug */,
+				C8C31D2C2BC03AFE008D0F9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8C31D2D2BC03AFE008D0F9C /* Build configuration list for PBXNativeTarget "MagneticDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8C31D2E2BC03AFE008D0F9C /* Debug */,
+				C8C31D2F2BC03AFE008D0F9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C8C31D332BC042FA008D0F9C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		C8C31D592BC5567E008D0F9C /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8C31D342BC042FA008D0F9C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8C31D332BC042FA008D0F9C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C8C31D5A2BC5567E008D0F9C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8C31D592BC5567E008D0F9C /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C8C31D112BC03AFD008D0F9C /* Project object */;
+}
